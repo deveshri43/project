@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .header {
+      display: flex;
+      background-color: #f4faed;
+      justify-content: space-evenly;
+      align-content: space-between;
+      align-self: flex-start;
+      color: aquamarine;
+      align-items: center;
+    }
+
+    .info {
+
+      height: 90dvh;
+      padding: 50px;
+      margin: 50px;
+      position: relative;
+      top: 50px;
+    }
+
+    .box {
+
+     
+      background-image: url('https://cdn.leonardo.ai/users/baa71447-50bd-497d-aa24-7c5979d74191/generations/6c925de0-4522-475d-9d3f-93f4e4e5b58f/Leonardo_Phoenix_09_generate_a_image_of_natural_products_fruit_1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+    }
+
+    .pro,
+    .proz {
+      border: 5px solid black;
+      border-radius: 3px;
+      margin: 15px;
+      padding-left: 20px;
+    }
+
+
+    .whatnew,
+    .whatnews {
+      display: grid;
+      grid-template-columns: 368px 368px 368px 368px;
+
+      grid-gap: 2px;
+      padding-left: 20px;
+      padding-bottom: 40px;
+      padding-top: 10px;
+    }
+
+    .pro,
+    .proz {
+      background-color: #f4faed;
+      border: #000000;
+      border-radius: 5px;
+    }
+
+
+    h1 {
+      text-align: right;
+      color: #f4faed;
+
+    }
+
+    .dev {
+      color: #ffffff;
+      text-align: right;
+      margin-left: 55%;
+      font-size: 24px;
+    }
+
+    #typo {
+      font-weight: 400;
+      line-height: 3dvb;
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: #000000;
+      word-spacing: 1cqmax;
+
+    }
+
+    .below {
+      display: flex;
+
+      height: 50px;
+      justify-content: space-evenly;
+      align-content: space-between;
+      align-self: flex-start;
+      align-items: center;
+      background-color: #55883B;
+
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+    }
+
+    a {
+      color: #ffffff;
+    }
+
+   
+  
+    
+    
+
+    #src {
+      width: 500px;
+    }
+
+    span {
+      font-family: sans-serif;
+      text-align: center;
+      font: 600;
+      position: relative;
+      left: 90px;
+      font-size: larger;
+    }
+
+    .btn {
+      position: relative;
+      left: 90px;
+      background-color: #55883B;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .my,
+    .myy,#homelink {
+      text-align: center;
+
+      font-size: 35px;
+
+      animation: blink 1s infinite;
+    }
+
+    .main,
+    .sec {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review {
+      background-color: aliceblue;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .revgrid {
+      display: grid;
+      grid-template-columns: 640px 640px;
+      padding: 20px;
+      margin: 20px;
+      grid-gap: 50px;
+
+    }
+
+    .gri {
+      border: 2px solid rgb(197, 197, 197);
+    }
+
+    .footerr {
+      display: flex;
+      flex-direction: column;
+      background-color: #e6f0e1;
+
+    }
+
+    .ek {
+      display: flex;
+      flex-direction: row;
+      justify-items: flex-start;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 310px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      
+    }
+
+    div.desc {
+      padding: 5px;
+      text-align: center;
+    }
+
+    a {
+      color: #100f0f;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .product {
+      display: flex;
+      flex-direction:row;
+      justify-content: space-evenly;
+      justify-items: center;
+    }
+
+    .gid {
+      display: flex;
+      flex-direction: column;
+
+    }
+.extra{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+    
+.ekum{
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+    
+    
+    
+.final{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #55883B;
+}
+.lst1{
+  align-items: center;
+  justify-content: space-evenly;
+}
+  </style>
+</head>
+
+<body>
+  
+  <div class="header">
+    <div class="logo"><img src="https://img.freepik.com/premium-vector/letter-s-nature-leaf-logo-design_375081-335.jpg"
+        style="height: 80px;">
+    </div>
+
+    <div class="imgdelivder">
+      <a href="/delivery.html#main"><img src="https://img.freepik.com/premium-vector/delivery-logo-design-template_132230-527.jpg"
+        style="height: 80px;"></a>
+
+    </div>
+    <div class="search">
+      <input type="search" value="search the natural products" id="src"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+        style="height: 28px; position: relative; top: 10px; ">
+    </div>
+    <div class="acc">
+      <a href="/acc.html#main" style="text-decoration: none; color: #55883B;">My Account</a>
+    </div>
+    <div class="accc">
+      <a href="/login.html#main" style="text-decoration: none; color: #55883B;">Login</a>
+    </div>
+    <div class="cart">
+      <a href="/cart.html#main" style="text-decoration: none;color: #55883B;">My cart</a>
+    </div>
+  </div>
+  <div class="below">
+    <div class="veg">
+      <a href="#newer" style="text-decoration: none;">Fresh</a>
+    </div>
+    <div class="best"><a href="#main" style="text-decoration: none;">Best seller</a></div>
+    <div class="fruit">
+      <a href="/veg.html#main" style="text-decoration: none;">Vegetables and fruit</a>
+    </div>
+    <div class="milk"><a href="/milk.html#main" style="text-decoration: none; ">Milk products</a></div>
+    <div class="nat"><a href="/oil.html#main" style="text-decoration: none;">Other natural product</a></div>
+  </div>
+
+  <div class="box">
+    <div class="info" id="typo">
+      
+      
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <main id="main">
+    <div class="main">
+      <div class="as">
+        <h2 class="my">Best Seller</h2>
+      </div>
+      <br>
+      <div class="whatnew">
+  
+        <div class="pro">
+          <img src="https://m.media-amazon.com/images/I/412hqm++i5L._AC_UF1000,1000_QL80_.jpg" height="300px"><br>
+        <span>Ghee</span><br>
+        <button type="button" class="btn" data-name="Ghee" data-image="https://m.media-amazon.com/images/I/412hqm++i5L._AC_UF1000,1000_QL80_.jpg">Add to cart</button>
+      </div>
+      <div class="pro">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpp9YoN0zZVjN6zY6cpgxJg90TGmiw4xCeayM5cInSnuBBFMUirA84WP2NmNPT6VClL30X63gP61I0IMk1Oot7Sg" height="300px"><br>
+        <span>Sesame Seed</span><br>
+        <button type="button" class="btn" data-name="Sesame Seed" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpp9YoN0zZVjN6zY6cpgxJg90TGmiw4xCeayM5cInSnuBBFMUirA84WP2NmNPT6VClL30X63gP61I0IMk1Oot7Sg">Add to cart</button>
+      </div>
+        <div class="pro">
+          <img src="https://ajantasoya.com/shop/wp-content/uploads/2022/06/best-pure-kachi-ghani-mustard-oil-600x600.jpg"
+            height="300px"><br><span> Compressed Oil </span><br><button type="button" class="btn">Add to cart</button>
+        </div>
+        <div class="pro">
+          <img src="https://greenlifebyshamusoleary.com/wp-content/uploads/2022/06/Banana-1.jpg"
+            height="300px"><br><span>Natural Banana</span><br><button type="button" class="btn">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main id="newer">
+    <div class="sec">
+      <div class="ass">
+        <h2 class="myy">What's New</h2>
+      </div>
+      <br>
+      <div class="whatnews">
+  
+        <div class="proz">
+          <img
+            src="https://organicmandya.com/cdn/shop/files/JaggerySquare_2_8bf0ec5f-71e8-4e6f-acdb-ed29a6e0bd7a.jpg?v=1719129335&width=1024"
+            height="300px"><br><span>Jaggery</span><br><button type="button" class="btn">Add to cart</button>
+        </div>
+        <div class="proz">
+          <img
+            src="https://gourmetgarden.in/cdn/shop/products/Himalayan_Pink_Rock_Salt_-_Coarse-100_14446897-6cc1-4457-b40d-b275cf8613f8_1280x.jpg?v=1703249271"
+            height="300px"><br><span>Rock Salt</span><br><button type="button" class="btn">Add to cart</button>
+        </div>
+        <div class="proz">
+          <img src="https://vanitascorner.com/wp-content/uploads/2019/06/Making-curd.jpg" height="300px"
+            width="290"><br><span> Curd</span><br><button type="button" class="btn">Add to cart</button>
+        </div>
+        <div class="proz">
+          <img src="https://static.toiimg.com/thumb/msid-108049228,width-400,resizemode-4/108049228.jpg" height="300px"
+            width="300px;"><br><span>Drumstick</span><br><button type="button" class="btn">Add to cart</button>
+        </div>
+      </div>
+    </div></main>
+    <script>
+      // Array to store cart items
+      let cart = [];
+    
+      // Function to update the cart UI
+      function updateCartUI() {
+        const cartItems = document.getElementById("cart-items");
+        cartItems.innerHTML = ""; // Clear previous items
+        cart.forEach(item => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" style="width: 100px;">
+            <span>${item.name}</span>
+          `;
+          cartItems.appendChild(li);
+        });
+      }
+    
+      // Add event listeners to "Add to Cart" buttons
+      document.querySelectorAll(".btn").forEach(button => {
+        button.addEventListener("click", (e) => {
+          const name = e.target.getAttribute("data-name");
+          const image = e.target.getAttribute("data-image");
+    
+          // Add item to cart array
+          cart.push({ name, image });
+    
+          // Notify the user
+          alert(`${name} has been added to your cart!`);
+    
+          // Optionally update the cart UI immediately
+          updateCartUI();
+        });
+      })
+    
+      // Handle "My Cart" link click
+      document.getElementById("my-cart-link").addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent default link behavior
+    
+        // Show the cart section and hide the main section
+        document.getElementById("main").classList.add("hidden");
+        document.getElementById("cart-section").classList.remove("hidden");
+    
+        // Update the cart UI
+        updateCartUI();
+      });
+    </script>
+  <div class="name">
+    <h1 style="color: #100f0f; text-align: center;"> Our Products</h1>
+  </div>
+  <div class="product">
+    
+    <div class="gid">
+      <div class="gallery">
+        <a target="_blank" href="https://indicwisdom.com/wp-content/uploads/2022/12/wood-pressed-oil-mobile-banner-jpg.webp">
+          <img src="https://indicwisdom.com/wp-content/uploads/2022/12/wood-pressed-oil-mobile-banner-jpg.webp"
+            alt="Cinque Terre" height="430px" width="400px">
+        </a>
+        <div class="desc">Wood Pressed Oil</div>
+        <p class="kit"><a href="/oil.html#main"id="homelink" style="text-align: center; position: relative; left:100px; bottom:10px">See More</a></p>
+     
+          </div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="https://www.mishry.com/wp-content/uploads/2020/08/best-dairy-products.png">
+          <img src="https://www.mishry.com/wp-content/uploads/2020/08/best-dairy-products.png" alt="Cinque Terre"
+            height="400px" width="900px">
+        </a>
+        <div class="desc">Milk products</div><a href="/milk.html#main"id="homelink" style="position: relative; left:100px">See More</a>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="https://www.diagnosisdiet.com/assets/images/7/fruit-og-0dd51728.jpg">
+          <img src="https://www.diagnosisdiet.com/assets/images/7/fruit-og-0dd51728.jpg" alt="Cinque Terre"
+            width="900px" height="400px">
+        </a>
+        <div class="desc">Fruits</div><a href="/link.html#main"id="homelink" style="position: relative; left:100px">See More</a>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="https://3.imimg.com/data3/SX/KS/MY-18430594/all-fresh-fruits-500x500.jpg">
+          <img src="https://3.imimg.com/data3/SX/KS/MY-18430594/all-fresh-fruits-500x500.jpg" alt="Cinque Terre" height="400px">
+        </a>
+        <div class="desc">Vegetables</div><a href="/veg.html#main"  id="homelink" style="position: relative; left:100px">See More</a>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="review">
+    <div class="head">
+      <h1 style="color: #242222; text-align: center; text-decoration: underline;"> Heartfelt Reviews</h1>
+    </div>
+    <div class="revgrid">
+      <div class="gri">
+        <h2 style="text-align: center; color: rgb(5, 5, 123);">Pure Goodness in Every Spoon</h2><p style="text-align: center; word-spacing:0.6em;">
+        I recently tried the ghee from this brand, and it was a game-changer for my cooking! The aroma is rich and
+        natural, and it adds such a delightful flavor to everything I prepare. Knowing it's made with organic
+        ingredients gives me peace of mind, and it’s so much healthier than other options out there. I also appreciate
+        the sustainable packaging—it feels great to support a brand that cares for the environment. Highly recommend!</p>
+        <br>
+        <h3 style="text-align: center;">Rakesh Sharma</h3>
+      </div>
+      <div class="gri">
+        <h2 style="text-align: center; color: rgb(5, 5, 123);">Authenticity You Can Taste</h2><p style="text-align: center; word-spacing:0.6em;">
+        These products have quickly become a staple in my kitchen! The natural essence of their offerings is unmatched,
+        and you can tell a lot of care goes into making them. The ghee has a golden hue and a texture that feels
+        luxurious. It's so versatile—I’ve used it in desserts, curries, and even as a spread. I’m thrilled to have found
+        a brand that combines quality with authenticity. Will definitely be coming back for more!</p>
+        <br>
+        <h3 style="text-align: center;">Priya Maske</h3>
+      </div>
+    </div>
+  </div>
+  <div class="footerr">
+
+    <div class="ek">
+      <div class="logiism">
+        <br><br>
+        <h2> Natural Bliss</h2>
+        <h4>Central India's most trusted brand for
+          <br>natural products.
+        </h4>
+      </div>
+      <div class="add">
+        <h2>Address<br></h2>
+        <h4>
+          160, Por Industrial Park, NH 48,<br>
+          Por, Nagpur 391243, INDIA</h4>
+      </div>
+      <div class="cont">
+        <h2> Contact Us<br></h2>
+        <h4>(+91) 89991 20020<br></h4>
+        <h4>care@kachighaani.com</h4>
+      </div>
+    </div>
+    <div class="extra">
+      <div class="ekum">
+      <h3 style="color: #000000; text-align: left;">Information</h3><br>
+
+      <a href="#">Search</a>
+      <br>
+      <a href="#">About Us</a>
+      <br>
+      <a href="#">Privacy Policy</a>
+      <br>
+      <a href="#">Terms & Conditions</a>
+    </div>
+    <div class="ekum">
+      <h3 style="color: #000000; text-align: center;">Customer Service</h3><br>
+
+      <a href="#">Shipping</a><br>
+      <a href="#">Payments</a><br>
+        <a href="#">Cancellation</a><br>
+        <a href="#">Track order</a><br>
+    </div>
+    <div class="ekum">
+      <h3 style="color: #000000; text-align: right;">Enquiry</h3><br>
+
+      <a href="#">Enquiry</a><br>
+        <a href="#">Certification</a><br>
+          <a href="#">Catalogue</a><br>
+            
+    </div>
+    
+    </div>
+
+  </div>
+  <div class="final">
+    <div class="lst1">
+      Copyright © 2024 by Naturalbliss.com
+    </div>
+   <div class="lst1">
+    <img src="https://png.pngtree.com/png-clipart/20221019/original/pngtree-whatsapp-mobile-software-icon-png-image_8704828.png">
+    <img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_1280.jpg">
+    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc">
+   </div>
+  </div>
+
+</body>
+
+</html>
